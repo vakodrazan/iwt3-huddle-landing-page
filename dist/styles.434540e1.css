@@ -205,10 +205,23 @@ ul {
     width: 50%;
   }
 }
+.features__illustration__content {
+  padding-top: 20px;
+  text-align: center;
+}
 @media (min-width: 1440px) {
   .features__illustration__content {
     max-width: 37%;
+    padding: 0;
+    text-align: left;
   }
+}
+.features__illustration__title {
+  font-size: 32px;
+  padding-bottom: 30px;
+}
+.features__illustration__description {
+  font-size: 18px;
 }
 .features__illustration:nth-of-type(even) {
   padding-top: 20px;

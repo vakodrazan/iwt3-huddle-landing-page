@@ -19,10 +19,24 @@
         }
 
         &__content {
+            padding-top: 20px;
+            text-align: center;
             @media (min-width: $desktop-breakpoint) {
                 max-width: 37%;
+                padding: 0;
+                text-align: left;
             }
         }
+
+        &__title {
+            font-size: 32px;
+            padding-bottom: 30px;
+        }
+
+        &__description {
+            font-size: 18px;
+        }
+
         &:nth-of-type(even) {
             padding-top: 20px;
             @media (min-width: $desktop-breakpoint) {
