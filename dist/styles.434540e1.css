@@ -1,2 +1,55 @@
+@font-face {
+  font-family: "Open Sans Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Open Sans Bold"), local("Open-Sans-Bold"), url("/open-sans-700.dd697487.woff2") format(woff2), url("/open-sans-700.eb0c747e.woff") format(woff);
+}
+@font-face {
+  font-family: "Open Sans Semi-bold";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Open Sans Semi-bold"), local("Open-Sans-Semi-bold"), url("/open-sans-600.309cc2ad.woff2") format(woff2), url("/open-sans-600.f5b6e316.woff") format(woff);
+}
+@font-face {
+  font-family: "Open Sans Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Open Sans Regular"), local("Open-Sans-Regular"), url("/open-sans-400.215ce20d.woff2") format(woff2), url("/open-sans-400.e8c939c8.woff") format(woff);
+}
+@font-face {
+  font-family: "Poppins Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Poppins Bold"), local("Poppins-Bold"), url("/poppins-700.3e73bda6.woff2") format(woff2), url("/poppins-700.facf664b.woff") format(woff);
+}
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+strong {
+  font-family: "Poppins", sans-serif;
+}
+
+input,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
 
 /*# sourceMappingURL=/styles.434540e1.css.map */

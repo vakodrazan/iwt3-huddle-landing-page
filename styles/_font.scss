@@ -1,0 +1,45 @@
+$path_to_font:"../fonts/";
+
+$font-faces: 
+  (
+    name: "Open Sans Bold",
+    system-name: "Open-Sans-Bold",
+    weight: 700,
+    style: normal,
+    filename: "open-sans-700"
+  ),
+  (
+    name: "Open Sans Semi-bold",
+    system-name: "Open-Sans-Semi-bold",
+    weight: 600,
+    style: normal,
+    filename: "open-sans-600"
+  ),
+  (
+    name: "Open Sans Regular",
+    system-name: "Open-Sans-Regular",
+    weight: 400,
+    style: normal,
+    filename: "open-sans-400"
+  ),
+  (
+    name: "Poppins Bold",
+    system-name: "Poppins-Bold",
+    weight: 700,
+    style: normal,
+    filename: "poppins-700"
+  )
+;
+
+@each $face in $font-faces {
+  @font-face {
+    font-family: map-get($face, name);
+    font-weight: map-get($face, weight);
+    font-style: map-get($face, style);
+      src: 
+        local(map-get($face, name)),
+        local(map-get($face, system-name)),
+        url('#{$path_to_font}#{map-get($face, filename)}.woff2') format(woff2),
+        url('#{$path_to_font}#{map-get($face, filename)}.woff') format(woff),
+  }
+}
