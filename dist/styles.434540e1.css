@@ -69,9 +69,16 @@ img {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 50px;
+  gap: 10px;
+  padding-top: 25px;
 }
 .header__heading img {
-  width: 120px;
+  width: 106px;
+}
+@media (min-width: 1440px) {
+  .header__heading img {
+    width: 199px;
+  }
 }
 .header__call-to-action {
   cursor: pointer;
@@ -85,6 +92,9 @@ img {
 }
 .header__call-to-action:focus {
   outline: none;
+}
+.header__call-to-action:hover {
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=/styles.434540e1.css.map */

@@ -3,10 +3,16 @@
 .header {
     @include flex-row-layout();
     padding-bottom: 50px;
+    gap: 10px;
+    padding-top: 25px;
 
     &__heading {
         img {
-            width: 120px;
+            width: 106px;
+
+            @media (min-width: $desktop-breakpoint) {
+                width: 199px;
+            }
         }
     }
 
@@ -22,6 +28,10 @@
 
         &:focus {
             outline: none;
+        }
+
+        &:hover {
+            opacity: 0.8;
         }
     }
 }
