@@ -1,2 +1,24 @@
 // Breakpoint
 $desktop-breakpoint: 1440px;
+
+// Color
+
+// Primary
+
+$pink: hsl(322, 100%, 66%);
+$light-pink: hsl(321, 100%, 78%);
+$light-red: hsl(0, 100%, 63%);
+
+// Neutral
+
+$very-dark-cyan: hsl(192, 100%, 9%);
+$very-pale-blue: hsl(207, 100%, 98%);
+
+// Layouts
+
+@mixin flex-row-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

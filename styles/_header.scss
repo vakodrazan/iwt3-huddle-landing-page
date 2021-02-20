@@ -1,0 +1,27 @@
+@import "./variables";
+
+.header {
+    @include flex-row-layout();
+    padding-bottom: 50px;
+
+    &__heading {
+        img {
+            width: 120px;
+        }
+    }
+
+    &__call-to-action {
+        cursor: pointer;
+        border: 1px solid $pink;
+        color: $pink;
+        padding: 4px 40px;
+        background-color: transparent;
+        border-radius: 28px;
+        font-size: 16px;
+        box-shadow: 0px 1px 8px -1px #ccc;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
