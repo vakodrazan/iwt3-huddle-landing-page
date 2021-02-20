@@ -260,4 +260,14 @@ ul {
   }
 }
 
+.testimonial {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.testimonial__title {
+  font-size: 43px;
+  padding-bottom: 20px;
+}
+
 /*# sourceMappingURL=/styles.434540e1.css.map */
