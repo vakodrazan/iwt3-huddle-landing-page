@@ -1,0 +1,11 @@
+@import "./variables";
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (min-width: $desktop-breakpoint) {
+        max-width: $desktop-breakpoint;
+        margin: auto;
+    }
+}
