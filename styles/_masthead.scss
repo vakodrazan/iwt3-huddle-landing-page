@@ -6,13 +6,18 @@
 
     &__title {
         padding-bottom: 30px;
+
+        @media (min-width: $desktop-breakpoint) {
+            font-size: 76px;
+        }
     }
 
     &__description {
         padding-bottom: 30px;
 
         @media (min-width: $desktop-breakpoint) {
-            max-width: 500px;
+            max-width: 80%;
+            font-size: 36px;
             margin: 0 auto;
         }
     }
