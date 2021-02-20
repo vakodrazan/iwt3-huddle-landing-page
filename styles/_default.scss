@@ -1,7 +1,10 @@
+@import "./variables";
+
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    color: $very-dark-cyan;
 }
 
 h1,
@@ -20,10 +23,35 @@ button {
     font-family: 'Open Sans', sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
+
 p {
     margin: 0;
 }
 
 img {
     max-width: 100%;
+}
+
+
+.call-to-action {
+    padding: 19px 57px;
+    font-weight: 600;
+    border: none;
+    border-radius: 40px;
+    margin-bottom: 53px;
+    background-color: $pink;
+    color: #fff;
+    box-shadow: 0px 1px 8px -1px #ccc;
+    font-size: 18px;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
 }

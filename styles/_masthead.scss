@@ -1,0 +1,20 @@
+@import "./variables";
+
+.masthead {
+    text-align: center;
+    padding-bottom: 70px;
+
+    &__title {
+        padding-bottom: 30px;
+    }
+
+    &__description {
+        padding-bottom: 30px;
+
+        @media (min-width: $desktop-breakpoint) {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+
+}
