@@ -35,6 +35,10 @@ img {
     max-width: 100%;
 }
 
+ul {
+    @include reset-list();
+}
+
 
 .call-to-action {
     padding: 19px 57px;

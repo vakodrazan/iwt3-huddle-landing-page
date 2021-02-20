@@ -14,6 +14,14 @@ $light-red: hsl(0, 100%, 63%);
 $very-dark-cyan: hsl(192, 100%, 9%);
 $very-pale-blue: hsl(207, 100%, 98%);
 
+// ====== Mixins ===========
+
+@mixin reset-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 // Layouts
 
 @mixin flex-row-layout {

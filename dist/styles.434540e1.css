@@ -57,6 +57,12 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .call-to-action {
   padding: 19px 57px;
   font-weight: 600;
@@ -126,14 +132,57 @@ img {
 .masthead__title {
   padding-bottom: 30px;
 }
+@media (min-width: 1440px) {
+  .masthead__title {
+    font-size: 76px;
+  }
+}
 .masthead__description {
   padding-bottom: 30px;
 }
 @media (min-width: 1440px) {
   .masthead__description {
-    max-width: 500px;
+    max-width: 80%;
+    font-size: 36px;
     margin: 0 auto;
   }
+}
+
+.mockups {
+  text-align: center;
+}
+.mockups__screen {
+  width: 80%;
+}
+@media (min-width: 1440px) {
+  .mockups__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.mockups__list__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 0 auto;
+  max-width: fit-content;
+}
+.mockups__list__item:not(:last-child) {
+  padding-bottom: 50px;
+}
+.mockups__list__item__rates {
+  font-weight: 700;
+  font-size: 50px;
+  color: black;
+}
+.mockups__list__item__description {
+  color: #808D99;
 }
 
 /*# sourceMappingURL=/styles.434540e1.css.map */
