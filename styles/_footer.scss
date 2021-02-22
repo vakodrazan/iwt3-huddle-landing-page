@@ -1,0 +1,85 @@
+@import "./variables";
+
+.footer {
+    background-image: url("../images/bg-footer-top-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    padding-top: 50px;
+    color: #fff;
+    
+    @media (min-width: $desktop-breakpoint) {
+        background-image: url("../images/bg-footer-top-desktop.svg");
+        padding-top: 163px;
+    }
+
+    &__navigation {
+        background-color: $very-dark-cyan;
+        padding-top: 57px;
+        
+        .container {
+            @include flex-row-layout();
+            flex-direction: column-reverse;
+            gap: 63px;
+
+            @media (min-width: $desktop-breakpoint) {
+                flex-direction: row;
+            }
+        }
+
+        &__subscription {
+    
+            &__title {
+                font-size: 34px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            
+            &__description {
+                padding-top: 23px;
+                padding-bottom: 23px;
+                font-size: 15px;
+            }
+    
+            &__form {
+                @include flex-row-layout();
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+                
+                @media (min-width: $desktop-breakpoint) {
+                    flex-direction: row;
+                    text-align: center;
+                }
+    
+                &__input {
+                    width: 97%;
+                    height: 30px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    outline: none;
+                    border: none;
+    
+                    @media (min-width: $desktop-breakpoint) {
+                        width: 60%;
+                    }
+                }
+    
+                &__submit {
+                    color: #fff;
+                    background-color: $pink;
+                    border: none;
+                    height: 40px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    max-width: 50%;
+                    align-self: flex-end;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}
