@@ -6,11 +6,14 @@
     &__illustration {
         padding-bottom: 30px;
 
-        > .container {
-            @media (min-width: $desktop-breakpoint) {
-                @include flex-row-layout(); 
+        &__wrapper {
+            > .container {
+                @media (min-width: $desktop-breakpoint) {
+                    @include flex-row-layout(); 
+                }
             }
         }
+
 
         &__image {
             @media (min-width: $desktop-breakpoint) {
@@ -39,37 +42,54 @@
 
         &:nth-of-type(even) {
             padding-top: 20px;
-            @media (min-width: $desktop-breakpoint) {
-                > .container {
-                    flex-direction: row;
+            .features__illustration__wrapper {
+                @media (min-width: $desktop-breakpoint) {
+                    > .container {
+                        flex-direction: row;
+                    }
                 }
             }
         }
         &:nth-of-type(odd) {
             background-repeat: no-repeat;
-            padding-top: 200px;
-            padding-bottom: 200px;
             background-size: contain;
             background-position: 0 0, 100% 100%;
-            // background-color: $very-pale-blue;   
-            @media (min-width: $desktop-breakpoint) {
-                > .container {
-                    flex-direction: row-reverse;
+            .features__illustration__wrapper {
+                @media (min-width: $desktop-breakpoint) {
+                    > .container {
+                        flex-direction: row-reverse;
+                    }
                 }
             }
         }
 
         &--grow-together { 
             background-image: url("../images/bg-section-top-mobile-1.svg"), url("../images/bg-section-bottom-mobile-1.svg");
+            padding-top: 200px;
+            padding-bottom: 95px;
             @media (min-width: $desktop-breakpoint) {
                 background-image: url("../images/bg-section-top-desktop-1.svg"), url("../images/bg-section-bottom-desktop-1.svg");
+            }
+
+            .features__illustration__wrapper {
+                background-color: $very-pale-blue;
+                padding-top: 160px;
+                padding-bottom: 160px;
             }
         }
 
         &--users {
             background-image: url("../images/bg-section-top-mobile-2.svg"), url("../images/bg-section-bottom-mobile-2.svg");
+            padding-top: 200px;
+            padding-bottom: 200px;
             @media (min-width: $desktop-breakpoint) {
                 background-image: url("../images/bg-section-top-desktop-2.svg"), url("../images/bg-section-bottom-desktop-2.svg");
+            }
+
+            .features__illustration__wrapper {
+                background-color: $very-pale-blue;
+                padding-top: 160px;
+                padding-bottom: 160px;
             }
         }
 
