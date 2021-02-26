@@ -229,7 +229,8 @@ a {
   font-size: 18px;
 }
 .features__illustration:nth-of-type(even) {
-  padding-top: 20px;
+  padding-top: 60px;
+  padding-bottom: 117px;
 }
 @media (min-width: 1440px) {
   .features__illustration:nth-of-type(even) .features__illustration__wrapper > .container {
@@ -248,12 +249,14 @@ a {
 }
 .features__illustration--grow-together {
   background-image: url("/bg-section-top-mobile-1.73cd2560.svg"), url("/bg-section-bottom-mobile-1.ac148f05.svg");
-  padding-top: 200px;
-  padding-bottom: 95px;
+  padding-top: 107px;
+  padding-bottom: 50px;
 }
 @media (min-width: 1440px) {
   .features__illustration--grow-together {
     background-image: url("/bg-section-top-desktop-1.269d93a0.svg"), url("/bg-section-bottom-desktop-1.3214226c.svg");
+    padding-top: 171px;
+    padding-bottom: 144px;
   }
 }
 .features__illustration--grow-together .features__illustration__wrapper {
@@ -263,12 +266,14 @@ a {
 }
 .features__illustration--users {
   background-image: url("/bg-section-top-mobile-2.4b302efd.svg"), url("/bg-section-bottom-mobile-2.e7b3747d.svg");
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 98px;
+  padding-bottom: 95px;
 }
 @media (min-width: 1440px) {
   .features__illustration--users {
     background-image: url("/bg-section-top-desktop-2.fd341c89.svg"), url("/bg-section-bottom-desktop-2.9cd269b4.svg");
+    padding-top: 161px;
+    padding-bottom: 145px;
   }
 }
 .features__illustration--users .features__illustration__wrapper {

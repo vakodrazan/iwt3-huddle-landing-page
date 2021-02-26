@@ -41,7 +41,8 @@
         }
 
         &:nth-of-type(even) {
-            padding-top: 20px;
+            padding-top: 60px;
+            padding-bottom: 117px;
             .features__illustration__wrapper {
                 @media (min-width: $desktop-breakpoint) {
                     > .container {
@@ -65,10 +66,13 @@
 
         &--grow-together { 
             background-image: url("../images/bg-section-top-mobile-1.svg"), url("../images/bg-section-bottom-mobile-1.svg");
-            padding-top: 200px;
-            padding-bottom: 95px;
+            padding-top: 107px;
+            padding-bottom: 50px;
+            // padding-bottom: 165px;
             @media (min-width: $desktop-breakpoint) {
                 background-image: url("../images/bg-section-top-desktop-1.svg"), url("../images/bg-section-bottom-desktop-1.svg");
+                padding-top: 171px;
+                padding-bottom: 144px;
             }
 
             .features__illustration__wrapper {
@@ -80,10 +84,12 @@
 
         &--users {
             background-image: url("../images/bg-section-top-mobile-2.svg"), url("../images/bg-section-bottom-mobile-2.svg");
-            padding-top: 200px;
-            padding-bottom: 200px;
+            padding-top: 98px;
+            padding-bottom: 95px;
             @media (min-width: $desktop-breakpoint) {
                 background-image: url("../images/bg-section-top-desktop-2.svg"), url("../images/bg-section-bottom-desktop-2.svg");
+                padding-top: 161px;
+                padding-bottom: 145px;
             }
 
             .features__illustration__wrapper {
